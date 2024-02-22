@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:foodiefaster/loginform.dart';
 
 class WelcomePage extends StatelessWidget {
   const WelcomePage({super.key});
@@ -18,7 +19,7 @@ class WelcomePage extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Text(
-                "Kota Attack",
+                "Mass United Restaurants",
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 33),
               ),
             ),
@@ -36,6 +37,7 @@ class WelcomePage extends StatelessWidget {
             ),
             Spacer(),
             Card(
+              
                 color: Colors.amber,
                 child: Column(
                   children: [
@@ -57,7 +59,7 @@ class WelcomePage extends StatelessWidget {
                       subtitle: Padding(
                         padding: const EdgeInsets.only(left: 8, right: 8),
                         child: Text(
-                          "kota atack adjf ajdlk aslkfjsdfkjs a;dkfj as;llfjas f;lsadaslkfjsdfkjs a;dkfj as;llfjas f;lsad aslkfjsdfkjs a;dkfj as;llfjas f;lsad fksajf",
+                          "United Mass Resturants adjf ajdlk aslkfjsdfkjs a;dkfj as;llfjas f;lsadaslkfjsdfkjs a;dkfj as;llfjas f;lsad aslkfjsdfkjs a;dkfj as;llfjas f;lsad fksajf",
                           style: TextStyle(fontSize: 16),
                         ),
                       ),
@@ -94,7 +96,10 @@ class WelcomePage extends StatelessWidget {
                                         borderRadius: BorderRadius.circular(5)
                                       )
                                     ),
-                                  onPressed: () {},
+                                  onPressed: () {
+                                    Navigator.push(context, MaterialPageRoute(builder: (context)=>const loginForm()),
+                                    );
+                                  },
                                   child: Text("Login",style: TextStyle(color: Colors.black),),
                                 ),
                               ),

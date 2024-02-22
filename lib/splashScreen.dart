@@ -9,7 +9,8 @@ class splashScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
 body: AnimatedSplashScreen(
-  splash: "images/splashimg.gif",
+  
+  splash: "images/splashimg.gif", 
   nextScreen: WelcomePage(),
  duration: 3000,
  ),
